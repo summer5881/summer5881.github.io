@@ -1,0 +1,9 @@
+# 头像设置
+avatar:
+  url: /images/avatar.jpg # 你的头像图片地址
+  rounded: true
+  opacity: 1
+
+# 主题色
+colors:
+  primary: "#66CCFF"
