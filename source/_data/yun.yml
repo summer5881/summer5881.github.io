@@ -10,3 +10,7 @@ colors:
 
 # 社交图标
 social:
+  - name: QQ
+    link: http://wpa.qq.com/msgrd?v=3&uin=411533642&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
