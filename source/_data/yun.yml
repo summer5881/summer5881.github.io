@@ -7,4 +7,6 @@ avatar:
 # 主题色
 colors:
   primary: "#66CCFF"
-  selection_bg: "#ffefd5" 
+
+# 社交图标
+social:
