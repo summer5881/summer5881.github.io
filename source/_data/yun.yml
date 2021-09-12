@@ -1,35 +1,145 @@
 # 头像设置
 avatar:
-  url: https://i.loli.net/2021/09/12/RTFpGCWKODqNtVk.jpg # 你的头像图片地址
+  enable: true
+  url: /images/avatar.jpg
   rounded: true
   opacity: 1
+  mickey_mouse: false
+  # 当前状态
+  status:
+    enable: true
+    emoji: 📙
+    message: 学习中！
 
-# 主题色
-colors:
-  primary: "#66CCFF"
-
-# 社交图标
-social:
-  - name: QQ
-    link: http://wpa.qq.com/msgrd?v=3&uin=411533642&site=qq&menu=yes
-    icon: icon-qq-line
-    color: "#12B7F5"
-
-# 页脚
-footer: 
+# 页脚设置
+footer:
+  since: 2021
+  # 位于年份与昵称之间的图标设置
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
+    # 图标的超链接，'话说谁会点这里呀'
+    url: https://yun.yunyoujun.cn/about/icon.html#%E8%BE%85%E5%8A%A9%E5%9B%BE%E6%A0%87
+    title: 图标仓库
+  # 网页运行时间设置
   live_time:
     enable: true
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
     start_time: "2021-09-12T00:00:00"
 
-  powered: 由 Hexo 驱动 v4.2.0 | 主题 - Yun v0.6.1
+# say设置 莫名失效，又莫名好了，可能是随机空白次数太多造成的；（未完工）
+say:
+  enable: true
+  api: /data/sentences.json
+  # 是否开启'一言'
+  hitokoto:
+    enable: false
+
+# 社交设置；（未完工）
+social:
+  - name: QQ
+    link: http://wpa.qq.com/msgrd?v=3&uin=411533642&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+
+# 光标设置
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+
+# 编辑设置
+post_edit:
+  enable: true
+  url: https://github.com/summer5881/summer5881.github.io/tree/hexo/source
+
+# 标语设置
+banner:
+  enable: true
+  title: 时光荏苒岁月如梭
+  src: /js/ui/banner.js
+  border: true
+  cloud:
     enable: true
-    
-  since: 2021
-  icon:
-    name: icon-cloud-line
-    animated: true
-    color: "#0078E7"
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+# 公告设置
+notice:
+  enable: true
+  content: 准备好和我一起变强了吗？o(〃'▽'〃)o
+
+# 网页背景设置
+bg_image:
+  enable: true
+  url: /images/background.jpg
+  # 暗色主题下背景地址
+  # dark:
+  # 设置背景模糊程度
+  # blur: 30px 
+  opacity: 1
+
+# 打赏设置
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 我在想peach(。>︿<)_θ
+  methods:
+    - name: 微信支付
+      path: /images/微信支付.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line 
+
+# 老婆专属页面设置
+girls:
+  enable: true
+
+# 侧边栏页面链接
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+
+  - name: 可爱的女孩子
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+
+  - name: 相册
+    url: /albums/
+    icon: icon-gallery-line
+    color: orange
 
 
+# 导航设置
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: icon-cloud-line
+    #   count: 你猜
+  custom:
+    title: 未命名
+    path: /next/
+    icon: icon-settings-line
+
+# 相册功能设置
+albums:
+  enable: true
